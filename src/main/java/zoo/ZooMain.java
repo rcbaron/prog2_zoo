@@ -9,6 +9,7 @@ import zoo.mammals.cats.Tiger;
 import zoo.mammals.primates.Chimpanzee;
 import zoo.mammals.primates.Orangutan;
 import zoo.mammals.primates.Primate;
+import zoo.mammals.rodents.Mouse;
 
 public class ZooMain {
     public static void main(String[] args) {
@@ -34,6 +35,24 @@ public class ZooMain {
         fishHabitat.add(new Salmon());
         fishHabitat.add(new Salmon("Red Salmon"));
         fishHabitat.listAnimals();
+
+        //Habitat for Mouses
+        Habitat<Mouse> mouseHabitat = new Habitat<>("MouseHabitat");
+        mouseHabitat.add(new Mouse());
+        mouseHabitat.add(new Mouse("Mickey"));
+        mouseHabitat.add(new Mouse("Pinky"));
+        mouseHabitat.listAnimals();
+
+        //Define Zoo
+        Zoo<Habitat<? extends Animal>> zoo = new Zoo<>();
+
+        //Build Habitats for Zoo
+        zoo.build(mouseHabitat);
+        zoo.build(primateHabitat);
+        zoo.build(catHabitat);
+
+        //Show all Habitats in Zoo
+        zoo.visitAllHabitats();
 
 
     }
