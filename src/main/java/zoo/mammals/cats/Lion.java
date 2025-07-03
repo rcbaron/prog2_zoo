@@ -1,26 +1,25 @@
 package zoo.mammals.cats;
 
-import zoo.fishes.Salmon;
-
 import java.util.Objects;
 
-public class Lion implements Cat{
+public class Lion implements Cat {
     private final String name;
 
-    public Lion(){
+    public Lion() {
         this.name = "Lion";
     }
 
-    public Lion(String name){
+    public Lion(String name) {
         this.name = name;
     }
 
     @Override
-    public String getName(){
+    public String getName() {
         return name;
     }
+
     @Override
-    public void move(){
+    public void move() {
         System.out.println("The Lion is running");
     }
 

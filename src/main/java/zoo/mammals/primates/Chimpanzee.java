@@ -2,23 +2,24 @@ package zoo.mammals.primates;
 
 import java.util.Objects;
 
-public class Chimpanzee implements Primate{
+public class Chimpanzee implements Primate {
     private final String name;
 
-    public Chimpanzee(){
+    public Chimpanzee() {
         this.name = "Chimpanzee";
     }
 
-    public Chimpanzee(String name){
+    public Chimpanzee(String name) {
         this.name = name;
     }
 
     @Override
-    public String getName(){
+    public String getName() {
         return name;
     }
+
     @Override
-    public void move(){
+    public void move() {
         System.out.println("The Chimpanzee is running");
     }
 

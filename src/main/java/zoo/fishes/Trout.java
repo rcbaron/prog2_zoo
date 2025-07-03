@@ -2,23 +2,24 @@ package zoo.fishes;
 
 import java.util.Objects;
 
-public class Trout implements Fish{
+public class Trout implements Fish {
     private final String name;
 
-    public Trout(){
+    public Trout() {
         this.name = "Trout";
     }
 
-    public Trout(String name){
+    public Trout(String name) {
         this.name = name;
     }
 
     @Override
-    public String getName(){
+    public String getName() {
         return name;
     }
+
     @Override
-    public void move(){
+    public void move() {
         System.out.println("The Salmon is swimming");
     }
 

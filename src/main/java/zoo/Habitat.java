@@ -3,11 +3,11 @@ package zoo;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Habitat<T extends Animal>{
+public class Habitat<T extends Animal> {
     private final String name;
     private final Set<T> animals;
 
-    public Habitat(String name){
+    public Habitat(String name) {
         this.name = name;
         this.animals = new HashSet<>();
     }

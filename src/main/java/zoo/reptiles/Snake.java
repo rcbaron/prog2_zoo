@@ -2,7 +2,7 @@ package zoo.reptiles;
 
 import java.util.Objects;
 
-public class Snake implements Reptile{
+public class Snake implements Reptile {
     private final String name;
 
     public Snake() {
@@ -14,11 +14,12 @@ public class Snake implements Reptile{
     }
 
     @Override
-    public String getName(){
+    public String getName() {
         return name;
     }
+
     @Override
-    public void move(){
+    public void move() {
         System.out.println("The Snake is crawling");
     }
 

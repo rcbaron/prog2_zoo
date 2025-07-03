@@ -2,7 +2,7 @@ package zoo.mammals.rodents;
 
 import java.util.Objects;
 
-public class Squirrel implements Rodent{
+public class Squirrel implements Rodent {
     private final String name;
 
     public Squirrel() {
@@ -14,11 +14,12 @@ public class Squirrel implements Rodent{
     }
 
     @Override
-    public String getName(){
-        return name ;
+    public String getName() {
+        return name;
     }
+
     @Override
-    public void move(){
+    public void move() {
         System.out.println("The Squirrel is running");
     }
 

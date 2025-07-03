@@ -2,23 +2,24 @@ package zoo.mammals.cats;
 
 import java.util.Objects;
 
-public class Tiger implements Cat{
+public class Tiger implements Cat {
     private final String name;
 
-    public Tiger(){
+    public Tiger() {
         this.name = "Tiger";
     }
 
-    public Tiger(String name){
+    public Tiger(String name) {
         this.name = name;
     }
 
     @Override
-    public String getName(){
+    public String getName() {
         return name;
     }
+
     @Override
-    public void move(){
+    public void move() {
         System.out.println("The Tiger is running");
     }
 
