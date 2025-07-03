@@ -1,5 +1,8 @@
 package zoo;
 
+import zoo.fishes.Fish;
+import zoo.fishes.Salmon;
+import zoo.fishes.Trout;
 import zoo.mammals.cats.Cat;
 import zoo.mammals.cats.Lion;
 import zoo.mammals.cats.Tiger;
@@ -23,6 +26,14 @@ public class ZooMain {
         primateHabitat.add(new Orangutan());
         primateHabitat.add(new Chimpanzee());
         primateHabitat.listAnimals();
+
+        //Habitat for Fishes
+        Habitat<Fish> fishHabitat = new Habitat<>("FishHabitat");
+        fishHabitat.add(new Salmon());
+        fishHabitat.add(new Trout());
+        fishHabitat.add(new Salmon());
+        fishHabitat.add(new Salmon("Red Salmon"));
+        fishHabitat.listAnimals();
 
 
     }
