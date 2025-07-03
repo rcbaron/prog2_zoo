@@ -8,6 +8,11 @@ public class Trout implements Fish{
     public Trout(){
         this.name = "Trout";
     }
+
+    public Trout(String name){
+        this.name = name;
+    }
+
     @Override
     public String getName(){
         return name;

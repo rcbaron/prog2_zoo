@@ -36,6 +36,18 @@ public class ZooMain {
         fishHabitat.add(new Salmon("Red Salmon"));
         fishHabitat.listAnimals();
 
+        //Habitat for Salmons
+        Habitat<Salmon> salmonHabitat = new Habitat<>("SalmonHabitat");
+        salmonHabitat.add(new Salmon());
+        salmonHabitat.add(new Salmon("Green Salmon"));
+        salmonHabitat.add(new Salmon("Blue Salmon"));
+
+        //Habitat for Trouts
+        Habitat<Trout> troutHabitat = new Habitat<>("TroutHabitat");
+        troutHabitat.add(new Trout());
+        troutHabitat.add(new Trout("Red Trout"));
+        troutHabitat.add(new Trout("Yellow Trout"));
+
         //Habitat for Mouses
         Habitat<Mouse> mouseHabitat = new Habitat<>("MouseHabitat");
         mouseHabitat.add(new Mouse());
@@ -53,6 +65,17 @@ public class ZooMain {
 
         //Show all Habitats in Zoo
         zoo.visitAllHabitats();
+
+        //Define Aquarium
+        Aquarium fishAquarium = new Aquarium();
+
+        //Build Habitats for Aquarium
+        fishAquarium.build(fishHabitat);
+        fishAquarium.build(salmonHabitat);
+        fishAquarium.build(troutHabitat);
+
+        //Show all Habitats in Aquarium
+        fishAquarium.visitAllHabitats();
 
 
     }
